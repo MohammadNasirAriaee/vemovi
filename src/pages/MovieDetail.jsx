@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 import BackUp from "../assets/images/backup.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const params = useParams();
@@ -10,9 +11,7 @@ export const MovieDetail = () => {
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
     : BackUp;
 
-  useEffect(() => {
-    document.title = `${movie.title} / Cinemate`;
-  });
+  useTitle(movie.title);
 
   return (
     <main>
