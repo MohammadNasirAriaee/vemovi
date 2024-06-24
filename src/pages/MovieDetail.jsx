@@ -10,7 +10,10 @@ export const MovieDetail = () => {
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
     : BackUp;
 
-  console.log(movie);
+  useEffect(() => {
+    document.title = `${movie.title} / Cinemate`;
+  });
+
   return (
     <main>
       <section className="flex justify-around flex-wrap py-5">
