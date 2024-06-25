@@ -17,7 +17,7 @@ export const PageNotFound = () => {
       <div className="flex justify-center my-4">
         <Link to="/">
           <button className="border-1 border-gray-300 shadow-md font-medium hover:bg-gray-100 dark:text-white p-2 rounded-sm dark:bg-gray-600 dark:hover:bg-gray-500">
-            Back to Cinemate
+            Back to Vemovi
           </button>
         </Link>
       </div>
